@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: CSitteSoftwaretechnik.Diffoniq
+PackageVersion: 2.0.0
+InstallerLocale: en-US
+InstallerType: msi
+Scope: machine
+MinimumOSVersion: 10.0.0.0
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Custom: INSTALLDESKTOPSHORTCUT=0
+UpgradeBehavior: install
+AppsAndFeaturesEntries:
+- DisplayName: Diffoniq
+  Publisher: C.Sitte Softwaretechnik e.U.
+  DisplayVersion: 2.0.0
+  ProductCode: '{F9D7A2E0-6CCF-499E-B24A-73336BA0B709}'
+  UpgradeCode: '{B9E4F2A7-3C61-4D58-9F2E-1A7C6D0B83E5}'
+  InstallerType: msi
+Installers:
+- Architecture: x64
+  InstallerUrl: https://diffoniq.com/files/Diffoniq-2.0.0-x64.msi
+  InstallerSha256: EF929E14EBBA5643812BB0CF8FB4D3392E40F721D34AA45C174F5CF7CB622CDD
+  ProductCode: '{F9D7A2E0-6CCF-499E-B24A-73336BA0B709}'
+  ElevationRequirement: elevatesSelf
+ManifestType: installer
+ManifestVersion: 1.12.0
+ReleaseDate: 2026-10-07
